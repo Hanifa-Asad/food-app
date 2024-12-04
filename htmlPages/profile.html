@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile</title>
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../images/web-logo.png">
+    <!-- BootStrap Css and Js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Toastr CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" />
+    <!-- Video Css -->
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="../Css/profile.css">
+</head>
+
+<body>
+    <!-- Left Navbar  -->
+    <nav class="navbar">
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="#" class="navbar__link">
+                    <img src="../images/logo.png" alt="" width="20px">
+                    <span>GROCE FOODS</span>
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link">
+                    <div class="toggle-icon" id="toggleDarkModeBtn">
+                        <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-sun">
+                            <circle cx="12" cy="12" r="5" />
+                            <line x1="12" y1="1" x2="12" y2="3" />
+                            <line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" />
+                            <line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </svg><span>Theme</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="../index.html" class="navbar__link"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-home">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                    </svg><span>Home</span></a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="./store.html" class="navbar__link"><svg style="cursor: pointer;"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-shopee">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 7l.867 12.143a2 2 0 0 0 2 1.857h10.276a2 2 0 0 0 2 -1.857l.867 -12.143h-16z" />
+                        <path d="M8.5 7c0 -1.653 1.5 -4 3.5 -4s3.5 2.347 3.5 4" />
+                        <path
+                            d="M9.5 17c.413 .462 1 1 2.5 1s2.5 -.897 2.5 -2s-1 -1.5 -2.5 -2s-2 -1.47 -2 -2c0 -1.104 1 -2 2 -2s1.5 0 2.5 1" />
+                    </svg><span>Store</span></a>
+            </li>
+            <li class="navbar__item">
+                <a href="./cart.html" class="navbar__link"><svg style="cursor: pointer;"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                    </svg><span>Cart</span></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link"><svg id="privacySettingsBtn" data-bs-toggle="modal"
+                        data-bs-target="#privacySettingsModal" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-key">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M16.555 3.843l3.602 3.602a2.877 2.877 0 0 1 0 4.069l-2.643 2.643a2.877 2.877 0 0 1 -4.069 0l-.301 -.301l-6.558 6.558a2 2 0 0 1 -1.239 .578l-.175 .008h-1.172a1 1 0 0 1 -.993 -.883l-.007 -.117v-1.172a2 2 0 0 1 .467 -1.284l.119 -.13l.414 -.414h2v-2h2v-2l2.144 -2.144l-.301 -.301a2.877 2.877 0 0 1 0 -4.069l2.643 -2.643a2.877 2.877 0 0 1 4.069 0z" />
+                        <path d="M15 9h.01" />
+                    </svg><span>Privacy Settings</span></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link"><svg data-bs-toggle="modal" data-bs-target="#contactModal"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-address-book">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z" />
+                        <path d="M10 16h6" />
+                        <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M4 8h3" />
+                        <path d="M4 12h3" />
+                        <path d="M4 16h3" />
+                    </svg><span>Contact us</span></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link"><svg data-bs-toggle="modal" data-bs-target="#videoModal"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-video">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
+                        <path d="M3 6m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+                    </svg><span>Videos</span></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link"><svg data-bs-toggle="modal" data-bs-target="#FaqsModal"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-flag-question">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M13.5 15a4.914 4.914 0 0 1 -1.5 -1a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v6" />
+                        <path d="M5 21v-7" />
+                        <path d="M19 22v.01" />
+                        <path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />
+                    </svg><span>FAQ's</span></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link"><svg data-bs-toggle="modal" data-bs-target="#helpModal"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-help">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                        <path d="M12 17l0 .01" />
+                        <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" />
+                    </svg><span>Help</span></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" id="logoutBtn" class="navbar__link"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-logout-2">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" />
+                        <path d="M15 12h-12l3 -3" />
+                        <path d="M6 15l-3 -3" />
+                    </svg><span>Logout</span></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Main Profile -->
+    <!-- <div class="row">
+        <div class="col-12">
+            <div class="mainProfileBg d-flex  justify-content-center align-items-center gap-0 flex-column ">
+                <h1 id="userName"></h1>
+                <h3>Welcome to Groce Foods</h3>
+                <p>Have a nice day.</p>
+                <div class="progress mb-3" style="display: none;" id="progressDiv">
+                    <div class="progress-bar" id="progressBar" style="width: 10%"></div>
+                </div>
+                <div class="profileImg">
+                    <img src="../images/default-img.png" id="userPhotoUpload" style="border-radius: 100px;">
+                    <input type="file" id="inputFile" style="display: none;">
+                </div>
+                <div class="userStatusContainer">
+                    <span id="userStatus" class="fw-bold"></span>
+                </div>
+                <button id="fileSelectBtn">Upload Picture</button>
+                <button id="cancelUploadBtn" style="display: none;">Cancel Upload</button>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Privacy Settings -->
+    <div class="modal fade" id="privacySettingsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Privacy Settings</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="">Your old Email:</label>
+                    <br>
+                    <input type="text" id="oldEmail" class="mb-2" placeholder="Old email" disabled>
+                    <br>
+                    <input type="email" id="newEmail" class="mb-2" placeholder="Type new email">
+                    <br>
+                    <button class="btn mb-2" id="updateEmailBtn">Update email</button>
+                    <br>
+                    <label for="">Your old Password:</label>
+                    <br>
+                    <div class="position-relative">
+                        <input type="password" id="oldPassword" class="mb-2" placeholder="Old Password" disabled>
+                        <img src="../images/eye-off.svg" class="position-absolute eye-off4" alt="Loading..."
+                            id="showPassword4">
+                    </div>
+                    <div class="position-relative ">
+                        <input type="password" id="newPassword" class=" mb-2" placeholder="Type new password">
+                        <img src="../images/eye-off.svg" alt="Loading..." class="position-absolute eye-off5"
+                            id="showPassword5">
+                    </div>
+                    <button class="btn" id="updatePasswordBtn">Update password</button>
+                    <button class="btn" id="verifyBtn">Verify yourself</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="profileBtn" data-bs-dismiss="modal"
+                        id="privacySettingsModalCloseBtn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal For Contact -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Help</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2> <svg style="color: red;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-device-landline-phone">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M20 3h-2a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2z" />
+                            <path d="M16 4h-11a3 3 0 0 0 -3 3v10a3 3 0 0 0 3 3h11" />
+                            <path d="M12 8h-6v3h6z" />
+                            <path d="M12 14v.01" />
+                            <path d="M9 14v.01" />
+                            <path d="M6 14v.01" />
+                            <path d="M12 17v.01" />
+                            <path d="M9 17v.01" />
+                            <path d="M6 17v.01" />
+                        </svg> Contact Us</h2>
+                    If you need further assistance, you can reach our customer support team:
+                    <ul>
+                        <li>
+                            Email: support@grocefoods.com
+                        </li>
+                        <li>
+                            Phone: +92-328-830-2289
+                        </li>
+                        <li>
+                            Live Chat: Available in the app
+                        </li>
+                        <p>
+                            Thank you for choosing Groce Foods! Happy shopping!
+                        </p>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="contactModalCloseBtn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal For FAQ's -->
+    <div class="modal fade" id="FaqsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Help</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p> <svg style="color: red;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-info-square-rounded">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 9h.01" />
+                            <path d="M11 12h1v4h1" />
+                            <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                        </svg>Read carefully.</p>
+                    <h1>Welcome to Groce Foods!</h1>
+                    <p>We're here to assist you with any questions or issues you might have. Below, you'll find answers
+                        to
+                        common questions and guidance on using our app effectively.</p>
+                    <!-- FAQ's Section -->
+                    <section id="explore-FAQ's">
+                        <div class="container">
+                            <div class="FaqSection">
+                                <div class="accordion-wrapper">
+                                    <div class="accordion">
+                                        <input type="radio" class="accordian" name="radio-a" id="check1" checked>
+                                        <label class="accordion-label" for="check1">How do I place an order?</label>
+                                        <div class="accordion-content">
+                                            <p>To place an order, simply browse our website, select the items you wish
+                                                to purchase, and
+                                                add them to your shopping cart. Proceed to checkout, where you'll be
+                                                prompted to enter
+                                                your shipping and payment information. Once your order is confirmed,
+                                                you'll receive an
+                                                order confirmation email.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <input type="radio" class="accordian" name="radio-a" id="check2">
+                                        <label class="accordion-label" for="check2">What payment methods do you
+                                            accept?</label>
+                                        <div class="accordion-content">
+                                            <p>We accept a variety of payment methods, including credit/debit cards
+                                                (JazzCash, EasyPaisa), PayPal, Apple Pay, Google Pay, and bank
+                                                transfers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <input type="radio" class="accordian" name="radio-a" id="check3">
+                                        <label class="accordion-label" for="check3">Can I track my order? </label>
+                                        <div class="accordion-content">
+                                            <p>Yes, you can track your order by logging into your account and navigating
+                                                to the
+                                                "Order History" section. Once your order has shipped, you'll receive.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <input type="radio" class="accordian" name="radio-a" id="check4">
+                                        <label class="accordion-label" for="check4">Are my personal and payment details
+                                            secure? </label>
+                                        <div class="accordion-content">
+                                            <p>Yes, we take the security of your personal and payment information very
+                                                seriously.
+                                                Our website uses industry-standard encryption technology to protect your
+                                                data during
+                                                transmission. Additionally, we do not store your payment details on our
+                                                servers.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <input type="radio" class="accordian" name="radio-a" id="check5">
+                                        <label class="accordion-label" for="check5">Do you offer international
+                                            shipping?</label>
+                                        <div class="accordion-content">
+                                            <p>Yes, we offer international shipping to select countries. Shipping costs
+                                                and delivery
+                                                times may vary depending on the destination. Please check our Shipping
+                                                Information page
+                                                for details. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="FaqsModalCloseBtn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Settings -->
+    <div class="modal fade" id="videoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Entertainment Videos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>Guy working at the Office</h1>
+                    <div class="video-container">
+                        <video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="460"
+                            poster="../images/videos=poster.jpg" data-setup="{}">
+                            <source src="../videos/Guy_Works_At_The_Office_preview.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <h1>Racing Car</h1>
+                    <div class="video-container">
+                        <video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="460"
+                            poster="../images/videos=poster.jpg" data-setup="{}">
+                            <source src="../videos/Car_Race_At_Sunset_preview.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <h1>Video Editing</h1>
+                    <div class="video-container">
+                        <video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="460"
+                            poster="../images/videos=poster.jpg" data-setup="{}">
+                            <source
+                                src="../videos/African_American_Male_Video_Editor_Working_In_Postproduction_Studio_preview_2471111.mp4"
+                                type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="videoModalCloseBtn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal For Help -->
+    <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Help</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p> <svg style="color: red;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-info-square-rounded">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 9h.01" />
+                            <path d="M11 12h1v4h1" />
+                            <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                        </svg>Read carefully.</p>
+                    <h1>Welcome to Groce Foods!</h1>
+                    <p>We're here to assist you with any questions or issues you might have. Below, you'll find
+                        answers
+                        to
+                        common questions and guidance on using our app effectively.</p>
+
+                    <h3>Creating an Account</h3>
+                    <ul class="helpModalUl">
+                        <li>
+                            Open the Groce Foods app
+                        </li>
+                        <li>
+                            Tap on the "Sign Up" button.
+                        </li>
+                        <li>
+                            Enter your email address, create a password, and provide other necessary details.
+                        </li>
+                        <li>
+                            Verify your email address through the verification link sent to your inbox.
+                        </li>
+                    </ul>
+                    <h3> Logging In</h3>
+                    <ul class="helpModalUl">
+                        <li>
+                            Open the app and tap on the "Log In" button.
+                        </li>
+                        <li>
+                            TEnter your registered email and password.
+                        </li>
+                        <li>
+                            ap "Log In" to access your account.
+                        </li>
+                    </ul>
+                    <h3>Payment</h3>
+                    <ul class="helpModalUl">
+                        <li>
+                            Choose your preferred payment method (credit card, debit card, or digital wallet).
+                        </li>
+                        <li>
+                            Enter the required payment details and tap "Confirm Payment."
+                        </li>
+                    </ul>
+                    <h3>Updating Profile Information</h3>
+                    <ul class="helpModalUl">
+                        <li>
+                            Go to the "Account" section.
+                        </li>
+                        <li>
+                            Tap on "Profile" and update your personal details.
+                        </li>
+                    </ul>
+                    <h3>Changing Password</h3>
+                    <ul class="helpModalUl">
+                        <li>
+                            In the "Account" section, select "Change Password."
+                        </li>
+                        <li>
+                            Enter your current password and the new password, then tap "Save."
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="helpModalCloseBtn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Js -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js">
+    </script>
+    <!-- Toastr JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- Custom Js -->
+    <script src="../javascript/profile.js" type="module"></script>
+    <script src="../firebase.js" type="module"></script>
+</body>
+
+</html>

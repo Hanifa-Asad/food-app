@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Food App</title>
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="./images/web-logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- BootStrap Css and Js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+    <!-- BootStrap Navbar -->
+    <nav class="navbar navbar-expand-xl bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand logo" href="./index.html"><img src="./images/logo.png" alt="logo..."
+                    width="40px">Groce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navUl">
+                    <li class="nav-item me-4">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#aboutSec">About</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#categoriesSec">Categories</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#servicesSec">Services</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#blogSec">Blog</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#contactSec">Subscribe</a>
+                    </li>
+                </ul>
+                <form class="d-flex headerBtn" role="search">
+                    <a href="./htmlPages/cart.html" class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-garden-cart">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" />
+                            <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055" />
+                            <path
+                                d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323" />
+                        </svg></a>
+                    <button class="btn me-2 storeBtn"><a href="./htmlPages/store.html">Visit Store</a></button>
+                    <button class="btn me-2 signupBtn"><a href="./htmlPages/signup.html">Signup</a></button>
+                    <button class="btn "><a href="./htmlPages/profile.html">Dashboard</a></button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- Main Slide -->
+    <div class="container">
+        <div class="slideBg">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 slideTextCol  d-flex  align-items-center">
+                    <div class="slideText">
+                        <span id="slideDescription">100% Healthy & Tasty</span>
+                        <h1 class="slideHeading">ORGANIC FOOD</h1>
+                        <span>A place where help you to buy fresh grocery.
+                            <br>Tasty and 100%
+                            healthy.</span>
+                        <div class="slideBtn d-flex align-items-center gap-2">
+                            <button id="orderInstructionsBtn" data-bs-toggle="modal" data-bs-target="#howToModal">How to
+                                Order</button>
+                            <button id="getSaleBtn">Get Sale</button>
+                        </div>
+                        <div class="slideReview d-flex align-items-center gap-2">
+                            <img src="./images/slide-review-1.png" alt="Loading...">
+                            <img src="./images/slide-review-2.png" alt="Loading...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 slideImgCol d-flex align-items-center ">
+                    <div class="slideImg">
+                        <img src="./images/slide-img.png" alt="Loading..." width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide Chart -->
+    <div class="container">
+        <div class="slideChartBg">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="slidechart">
+                        <img src="./images/slide-chart.png" alt="Loading..." width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About  -->
+    <div id="aboutSec"></div>
+    <div class="container">
+        <div class="exBg">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex exImgCol align-items-center">
+                    <div class="exImg">
+                        <img src="./images/ex-img.png" alt="Loading..." width="100%">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 exTextCol align-items-center">
+                    <div class="exText">
+                        <h2>HIGH QUALITY</h2>
+                        <h1 class="exHeading">ORGANIC FOOD STORE</h1>
+                        <p>Founded in 2009, GROCE is a family business that started with a 3,500 square meter
+                            farm located in Karyawangi Village, West Bandung. It soon expanded to an organic
+                            movement that encourages people to not only consume organic vegetables, but also plant
+                            it too, wherever they may be. From them you can purchase both the farm produce
+                            (vegetables, microgreens, etc) and also tools and supplies to start your own garden.
+                        </p>
+                        <p class="quote">Finding organic food in Jakarta can be tricky but it’s not impossible! Here are
+                            some great
+                            organic food sellers who delivers right to your door!</p>
+                        <span><img src="./images/John Doe.png" alt="Loading..."></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <div id="categoriesSec"></div>
+    <div class="container">
+        <div class="categoriesBg">
+            <h1 class="categoriesHeading text-center pb-4">Our Best Categories</h1>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 category1">
+                    <div class="card p-2 text-center">
+                        <img src="./images/dan-gold-4_jhDO54BYg-unsplash.jpg" class="card-img-top" alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vegetables</h5>
+                            <p class="card-text">Purchasing from select family farmers who farms organically.</p>
+                            <button href="#" class="categoryBtn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 category2">
+                    <div class="card p-2 text-center">
+                        <img src="./images/images.jpg" class="card-img-top" alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruits</h5>
+                            <p class="card-text">Purchasing from select family farmers who farms organically.</p>
+                            <button href="#" class="categoryBtn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 category3">
+                    <div class="card p-2 text-center">
+                        <img src="./images/images (1).jpg" class="card-img-top" alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Salad</h5>
+                            <p class="card-text">Purchasing from select family farmers who farms organically.</p>
+                            <button href="#" class="categoryBtn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 category4">
+                    <div class="card p-2 text-center seemoreBg">
+                        <img src="./images/seemore-img.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title seeMoreTitle">Others</h5>
+                            <p class="card-text seeMoreText">Milk, Tools, Spice,Pizza
+                                Spaghetti, Salad etc.</p>
+                            <button href="#" class="seeMoreCategoryBtn">See More <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l14 0" />
+                                    <path d="M13 18l6 -6" />
+                                    <path d="M13 6l6 6" />
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services You -->
+    <div id="servicesSec"></div>
+    <div class="container">
+        <div class="hireBg">
+            <h1 class="hireHeading">We are here for You</h1>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="hireText">
+                        <p>Groce could be your daily service. We set the high standard inspired by forest system to
+                            produce healthy crops with the authentic taste of vegetables</p>
+                    </div>
+                    <div class="hireUl">
+                        <ul>
+                            <li>Best service and fast response</li>
+                            <li>User friendly app</li>
+                            <li>Profesional staff</li>
+                        </ul>
+                    </div>
+                    <div class="installAppDiv">
+                        <button id="installAppBtn">Install App</button>
+                        <button id="installAppBtn">Install App</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="row hireBxRow">
+                        <div class="hireBx1 col-12 col-sm-5  col-md-5 p-2">
+                            <h3>Fast Delivery</h3>
+                            <p>Deliver within 30 minutes</p>
+                        </div>
+                        <div class="hireBx2 col-12 col-sm-5 p-2">
+                            <h3>Fresh Foods</h3>
+                            <p>Enjoy your food fresh and healthy</p>
+                        </div>
+                        <div class="hireBx3 col-12 col-sm-5  col-md-5 p-2">
+                            <h3>Dine in</h3>
+                            <p>Enjoy your food fresh and healthy</p>
+                        </div>
+                        <div class="hireBx4 col-12 col-sm-5  col-md-5 p-2">
+                            <h3>Pick up</h3>
+                            <p>Delivery at your doorstep</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Post -->
+    <div id="blogSec"></div>
+    <div class="container">
+        <div class="blogPostBg">
+            <h1 class="blogPostHeading text-center pb-4">Our Blog Post</h1>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 blogPost1">
+                    <div class="card p-2 text-center">
+                        <img src="./images/blog1-img" class="card-img-top" alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lifestyle</h5>
+                            <p id="para1">Your recommendations are backed by our scientific advisory board, made of
+                                leading
+                                doctors, scientists, and nutritionists...</p>
+                            <button href="#" class="categoryBtn" id="para1Btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 blogPost2">
+                    <div class="card p-2 text-center">
+                        <img src="./images/blog2-img" class="card-img-top" alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Healthy</h5>
+                            <p id="para2" class="card-text">There are tons of healthy living blogs and resources online
+                                that it can feel overwhelming with so many to choose from...</p>
+                            <button href="#" class="categoryBtn" id="para2Btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 blogPost3">
+                    <div class="card p-2 text-center">
+                        <img src="./images/blog3-img.avif" class="card-img-top" alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruits</h5>
+                            <p id="para3" class="card-text">I tend to get a lot of questions this time of year about how
+                                to prevent and deal with stress, and between holiday part...</p>
+                            <button href="#" class="categoryBtn" id="para3Btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 blogPost4">
+                    <div class="card p-2 text-center">
+                        <img src="./images/blog4-img.avif" class="card-img-top" alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Strawberry</h5>
+                            <p id="para4">My health goals included improved digestion, energy, stress management,
+                                immunity, sleep,
+                                and aiding exercise performance...</p>
+                            <button href="#" class="categoryBtn" id="para4Btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 blogPost5">
+                    <div class="card p-2 text-center">
+                        <img src="./images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" class="card-img-top" alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vagetables</h5>
+                            <p id="para5">Vegetables are packed with essential nutrients, vitamins, and minerals crucial
+                                for maintaining a healthy diet...</p>
+                            <button href="#" class="categoryBtn" id="para5Btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 blogPost6">
+                    <div class="card p-2 text-center">
+                        <img src="./images/davide-cantelli-jpkfc5_d-DI-unsplash.jpg" class="card-img-top"
+                            alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fast Food</h5>
+                            <p id="para6" class="card-text">Fast food is known for its convenience and quick service,
+                                making it a popular choice for busy individuals...</p>
+                            <button href="#" class="categoryBtn" id="para6Btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 blogPost7">
+                    <div class="card p-2 text-center">
+                        <img src="./images/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg" class="card-img-top" alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mixtures</h5>
+                            <p id="para7" class="card-text">Mixtures Food combines various ingredients and cooking
+                                styles, creating unique and flavorful dishes...</p>
+                            <button href="#" class="categoryBtn" id="para7Btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 blogPost8">
+                    <div class="card p-2 text-center">
+                        <img src="./images/brooke-lark-M4E7X3z80PQ-unsplash.jpg" class="card-img-top" alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fast & Green Food</h5>
+                            <p id="para8">Fast & Green Food offers a quick, healthy alternative to traditional fast food
+                                by incorporating fresh, plant-based ingredients...</p>
+                            <button href="#" class="categoryBtn" id="para8Btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact  -->
+    <div id="contactSec"></div>
+    <div class="container">
+        <div class="contactBg">
+            <h1 class="contactHeading text-center">Subscribe to Newslatter</h1>
+            <h6 class="text-center">To get weekly recipe updates</h6>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 contactImgCol d-flex align-items-center ">
+                    <div class="contactImg">
+                        <img src="./images/contact-img.png" alt="Loading..." width="100%">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
+                    <form action="https://formspree.io/f/xvoewqbe" method="post">
+                        <input type="email" class="emailSend" name="email" placeholder="Enter your email address">
+                        <button type="submit" class="sendEmailBtn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+        <div class="footerBg">
+            <div class="footercnt d-flex justify-content-around ">
+                <div class="logofooter">
+                    <img src="./images/logo-footer.png" alt="logo..." width="40px"><span
+                        id="footerLogo">Groce</span></a>
+                </div>
+                <div class="author">
+                    <h2 class="authorHeading">HANIFA ASAD</h2>
+                </div>
+                <div class="socialMediaIcons">
+                    <a href="https://github.com/Hanifa-Asad"><svg class="socialMedia"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                        </svg></a>
+                    <a href="https://www.linkedin.com/in/hanifa-asad-3715212aa/"><svg class="socialMedia"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                            <path d="M8 11l0 5" />
+                            <path d="M8 8l0 .01" />
+                            <path d="M12 16l0 -5" />
+                            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                        </svg></a>
+                    <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="cursor: pointer;"
+                        id="whatsapp"><svg class="socialMedia" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                            <path
+                                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <a href="#" id="scroll-to-top-btn" title="Scroll to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-home-up">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 21v-6a2 2 0 0 1 2 -2h2c.641 0 1.212 .302 1.578 .771" />
+            <path d="M20.136 11.136l-8.136 -8.136l-9 9h2v7a2 2 0 0 0 2 2h6.344" />
+            <path d="M19 22v-6" />
+            <path d="M22 19l-3 -3l-3 3" />
+        </svg>
+    </a>
+
+    <!-- Modal  Whatsapp-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Whatsapp Number</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="whatsappInput" id="whastsappNo" disabled>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="whatsppModalBtn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How to order Modal -->
+    <div class="modal fade" id="howToModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">How to Order Using the Groce Foods App</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3> Step 1: Download and Install the App</h3>
+                    <p> For iOS Users: Open the App Store, search for "Groce Foods", and tap "Download".
+                        For Android Users: Open the Google Play Store, search for "Groce Foods", and tap "Install".</p>
+                    <h3> Step 2: Sign Up or Log In</h3>
+                    <p>New Users: Tap on "Sign Up" to create a new account. Enter your email, create a password, and
+                        fill
+                        in any other required information.
+                        Existing Users: Tap on "Log In" and enter your email and password.</p>
+                    <h3>Step 3: Browse Products</h3>
+                    <p> Categories: Navigate through the categories (e.g., Fruits, Vegetables, Dairy, etc.) to find the
+                        products you need.
+                        Search: Use the search bar at the top of the screen to quickly find specific items.
+                        Filters: Apply filters to sort products by price, popularity, or dietary preferences.</p>
+                    <h3>Step 4: Add Items to Your Cart</h3>
+                    <p>Select Item: Tap on a product to view its details.
+                        Adjust Quantity: Use the + and - buttons to adjust the quantity.
+                        Add to Cart: Tap the "Add to Cart" button to add the item to your shopping cart.</p>
+                    <h3> Step 5: Review Your Cart</h3>
+                    <p>View Cart: Tap on the cart icon at the top right corner of the screen.
+                        Edit Items: Adjust quantities or remove items from your cart as needed.
+                        Apply Coupons: Enter any discount codes or coupons you have.
+                    </p>
+                    <h3>Step 6: Proceed to Checkout
+                    </h3>
+                    <p>Checkout: Tap the "Checkout" button.
+                        Delivery Details: Enter your delivery address or select from saved addresses.
+                        Delivery Time: Choose a preferred delivery time slot.
+                        Payment Method: Select your payment method (Credit/Debit Card, PayPal, etc.).
+                    </p>
+                    <h3>
+                        Step 7: Confirm and Place Your Order
+                    </h3>
+                    <p>
+                        Review Order: Double-check your order details, delivery address, and payment method.
+                        Place Order: Tap the "Place Order" button to finalize your purchase.
+                        Confirmation: You will receive an order confirmation screen and an email with your order
+                        details.
+                    </p>
+                    <h3>
+                        Step 8: Track Your Order
+                    </h3>
+                    <p> Order Status: Go to the "My Orders" section in the app to view the status of your current and
+                    </p>
+                    orders.
+                    Live Tracking: For real-time updates, tap on your current order to see the delivery progress.
+                    past
+                    <h3>
+                        Step 9: Receive Your Delivery
+                    </h3>
+                    <p>
+                        Delivery Notification: You will receive a notification when your order is out for delivery.
+                        Receive Order: Accept your order from the delivery person and verify the items.
+                    </p>
+                    <h3>
+                        Step 10: Provide Feedback
+                    </h3>
+                    <p>
+                        Rate Your Experience: After receiving your order, you will be prompted to rate your experience
+                        and
+                        provide feedback.
+                        Customer Support: If you encounter any issues, contact our customer support through the app for
+                        assistance.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="howToModalBtn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Js -->
+    <script src="./app.js" type="module"></script>
+    <script src="./firebase.js" type="module"></script>
+</body>
+
+</html>

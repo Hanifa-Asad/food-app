@@ -1,0 +1,342 @@
+@import url(./responsive.css);
+
+@font-face {
+    font-family: secondFont;
+    src: url(../Font/Elianto-Regular.otf);
+}
+
+:root {
+    --navBarBgColor: #fff;
+    --TextBlack: #000;
+    --textWhite: #FFF;
+    --btnBg: #653743;
+    --btnBgHover: #3f222a;
+    --BtnRadius: 8px;
+    --BtnPadding: 5px 15px;
+    --fontweight: bold;
+    --orderInstructionsBg: #F0693E;
+    --cardsBxShadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+    --overlayColor: #653743;
+    --inputRadius: 15px;
+    --inputBg: #eee;
+    ---inputPadding: 12px 15px;
+    --formBg: #c8c8c8;
+}
+
+* {
+    font-family: Raleway !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: var(--navBarBgColor) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%233CB018' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    color: var(--textWhite) !important;
+    border: none !important;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: secondFont;
+}
+
+.fa-solid {
+    font-size: 30px;
+}
+
+.navUl li a {
+    font-weight: var(--fontweight);
+}
+
+.headerBtn>button {
+    background-color: var(--overlayColor);
+    color: var(--textWhite);
+    border: none;
+    border-radius: var(--BtnRadius);
+    padding: var(--BtnPadding);
+}
+
+.headerBtn>button:hover {
+    background-color: var(--btnBgHover);
+    color: var(--textWhite);
+    transition: 1s ease background-color;
+}
+
+/* Slide */
+.slideHeading {
+    font-family: secondFont;
+}
+
+.slideBg,
+.slideChartBg {
+    padding-bottom: 40px;
+}
+
+#orderInstructionsBtn,
+.sendEmailBtn,
+#getSaleBtn {
+    background-color: var(--btnBg);
+    padding: var(--BtnPadding);
+    border: none;
+    color: var(--textWhite);
+    border-radius: var(--BtnRadius);
+}
+
+#getSaleBtn {
+    background-color: var(--textWhite);
+    border: 2px solid var(--TextBlack);
+    font-weight: var(--fontweight);
+    color: var(--TextBlack);
+}
+
+.slideBtn {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+#slideDescription {
+    font-weight: var(--fontweight);
+}
+
+/* Experience */
+.exBg {
+    padding-bottom: 40px;
+}
+
+.exHeading {
+    color: var(--btnBg);
+    font-family: secondFont;
+}
+
+.exText h2 {
+    margin: 0px !important;
+    font-weight: var(--fontweight);
+}
+
+.exText>p.quote {
+    font-weight: var(--fontweight);
+}
+
+/* Categories */
+.categoriesBg {
+    padding-bottom: 40px;
+}
+
+.card {
+    box-shadow: var(--cardsBxShadow);
+    border-radius: var(--BtnRadius);
+    border: none;
+}
+
+.categoryBtn,
+.seeMoreCategoryBtn {
+    background-color: var(--textWhite);
+    border: 2px solid var(--TextBlack);
+    padding: var(--BtnPadding);
+    border-radius: var(--BtnRadius);
+    font-weight: var(--fontweight);
+}
+
+.seeMoreCategoryBtn {
+    background-color: var(--btnBg);
+    border: 2px solid var(--textWhite);
+    color: var(--textWhite);
+}
+
+.categoriesHeading {
+    font-family: secondFont;
+}
+
+.seemoreBg {
+    background-color: var(--btnBg);
+}
+
+.seeMoreTitle,
+.seeMoreText {
+    color: var(--textWhite);
+}
+
+.whatsppModalBtn,
+.howToModalBtn {
+    border-radius: var(--BtnRadius);
+    border: 2px solid var(--orderInstructionsBg);
+    background-color: var(--orderInstructionsBg);
+    color: var(--textWhite);
+    padding: var(--BtnPadding);
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+/* Hire */
+.hireBg {
+    padding-bottom: 40px;
+}
+
+.hireHeading {
+    font-family: secondFont;
+    color: var(--btnBg);
+}
+
+.hireText {
+    font-weight: var(--fontweight);
+}
+
+.hireUl ul {
+    list-style-type: square;
+}
+
+.hireUl ul li {
+    margin-bottom: 20px;
+}
+
+.hireBx1,
+.hireBx2,
+.hireBx3,
+.hireBx4 {
+    box-shadow: var(--cardsBxShadow);
+    border-radius: var(--BtnRadius);
+}
+
+.hireBx1,
+.hireBx2 {
+    margin-bottom: 20px;
+}
+
+.hireBx1,
+.hireBx3 {
+    margin-right: 20px;
+}
+
+#installAppBtn {
+    background-color: var(--btnBg);
+    color: var(--textWhite);
+    border: none;
+    border-radius: var(--BtnRadius);
+    padding: var(--BtnPadding);
+
+}
+
+#installAppBtn:hover {
+    background-color: var(--btnBgHover);
+    color: var(--textWhite);
+    transition: 1s ease background-color;
+}
+
+/* Blog Post */
+.blogPostHeading {
+    font-family: secondFont;
+}
+
+.card h6 {
+    font-weight: var(--fontweight);
+}
+
+.blogPostBg {
+    padding-bottom: 40px;
+}
+
+.blogPost1,
+.blogPost2,
+.blogPost3,
+.blogPost4 {
+    margin-bottom: 20px;
+}
+
+/* Contact */
+.contactBg {
+    padding-bottom: 40px;
+}
+
+.emailSend {
+    border: 2px solid var(--textWhite);
+    background-color: var(--inputBg);
+    padding: var(---inputPadding);
+    outline: none;
+    font-weight: var(--fontweight);
+    border-radius: var(--inputRadius);
+    width: 80%;
+
+}
+
+.sendEmailBtn {
+    margin-top: 10px;
+}
+
+.contactHeading {
+    font-family: secondFont;
+}
+
+/* FooterBg */
+.footerBg {
+    padding: 20px;
+
+}
+
+.footerBg {
+    background-color: var(--overlayColor);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#footerLogo {
+    font-family: secondFont;
+    font-size: 30px;
+    color: var(--textWhite);
+}
+
+.authorHeading {
+    color: #FFF;
+    font-family: secondFont;
+}
+
+.whatsappInput {
+    background-color: #e9e9e9;
+    color: var(--TextBlack);
+    border-radius: var(--BtnRadius);
+    border: none !important;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#staticBackdropLabel {
+    font-family: secondFont;
+}
+
+/* Scroll to top */
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--overlayColor);
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+#scroll-to-top-btn svg {
+    transform: translateY(-4px);
+}
+
+svg.socialMedia {
+    color: white;
+    width: 30px !important;
+    height: 30px !important;
+}

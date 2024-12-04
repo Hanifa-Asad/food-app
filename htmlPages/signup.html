@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Signup</title>
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../images/web-logo.png">
+    <!-- BootStrap Css and Js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Toastr CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="../Css/signup.css">
+</head>
+
+<body>
+    <!-- Start Login/SignUp Form -->
+    <div class="form">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form class="formtop">
+                    <h1>SignUp</h1>
+                    <div class="social-container">
+                        <a href="https://github.com/Farooq85-dev" target="_blank" class="social"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg></a>
+                        <a href="https://www.linkedin.com/in/muhammad-farooq-b71886295/" target="_blank"
+                            class="social"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                                <path d="M8 11l0 5" />
+                                <path d="M8 8l0 .01" />
+                                <path d="M12 16l0 -5" />
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                            </svg></a>
+                        <a href="https://web.facebook.com/farooq8185" target="_blank" class="social"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                            </svg></a>
+                    </div>
+                    <input type="text" placeholder="Name" id="nameSignUp" />
+                    <input type="email" placeholder="Email" id="emailSignUp" />
+                    <div class="position-relative passwordContainer">
+                        <input type="password" placeholder="Password" id="passwordSignUp" />
+                        <img src="../images/eye-off.svg" alt="Loading..." class="position-absolute eye-off1"
+                            id="showPassword1" style="cursor: pointer;">
+                    </div>
+                    <div class="position-relative cPasswordContainer">
+                        <input type="password" placeholder="Confirm Password" id="cpasswordSignUp" />
+                        <img src="../images/eye-off.svg" alt="Loading..." class="position-absolute eye-off2"
+                            id="showPassword2" style="cursor: pointer;">
+                    </div>
+                    <button id="registerYourSelfBtn">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form class="formbottom">
+                    <h1>SignIn</h1>
+                    <div class="social-container">
+                        <a href="https://github.com/Farooq85-dev" target="_blank" class="social"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg></a>
+                        <a href="https://www.linkedin.com/in/muhammad-farooq-b71886295/" target="_blank"
+                            class="social"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                                <path d="M8 11l0 5" />
+                                <path d="M8 8l0 .01" />
+                                <path d="M12 16l0 -5" />
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                            </svg></a>
+                        <a href="https://web.facebook.com/farooq8185" target="_blank" class="social"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                            </svg></a>
+                    </div>
+                    <input type="email" placeholder="Email" id="emailSignIn" />
+                    <div class="position-relative passswordSigninContainer">
+                        <input type="password" placeholder="Password" id="passwordSignIn" />
+                        <img src="../images/eye-off.svg" alt="Loading..." class="position-absolute eye-off3"
+                            id="showPassword3" style="cursor: pointer;">
+                    </div>
+                    <span style="color: red; cursor: pointer;" class="rstPassword" data-bs-toggle="modal"
+                        data-bs-target="#forgotPasswordModal">Forgot
+                        Password?</span>
+                    <button id="signInYourSelfBtn">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p class="loginp">To keep connected with us please login with your personal info.</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello Friends!</h1>
+                        <p class="signp">Enter your personal details and start journey with us.</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Login/SignUp form -->
+
+    <!-- Modal For Forgot Password -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Forgot Passsword</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p> <svg style="color: red;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-alert-circle">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                            <path d="M12 8v4" />
+                            <path d="M12 16h.01" />
+                        </svg> Please give the correct email. Then, we will send you reset password email.
+                    </p>
+                    <input type="email" placeholder="Enter your correct email" id="resetEmail" />
+                    <button id="resetBtn">Send</button>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Toastr JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- Custom Js -->
+    <script src="../javascript/signup.js" type="module"></script>
+    <script src="../firebase.js" type="module"></script>
+</body>
+
+</html>

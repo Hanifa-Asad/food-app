@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Store</title>
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../images/web-logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- BootStrap Css and Js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/store.css">
+</head>
+
+<body>
+
+    <!-- BootStrap Navbar -->
+    <nav class="navbar navbar-expand-xl bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand logo" href="./index.html"><img src="../images/logo.png" alt="logo..."
+                    width="40px">Groce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navUl">
+                </ul>
+                <form class="d-flex headerBtn" role="search">
+                    <a href="../htmlPages/cart.html" class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                            height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart-check">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path d="M11.5 17h-5.5v-14h-2" />
+                            <path d="M6 5l14 1l-1 7h-13" />
+                            <path d="M15 19l2 2l4 -4" />
+                        </svg></a>
+                    <button class="btn me-2 signupBtn"><a href="../htmlPages/signup.html">Signup</a></button>
+                    <button class="btn "><a href="../htmlPages/profile.html">Dashboard</a></button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- Carousel -->
+
+    <section>
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img style="border-radius: 5px;" src="../images/carousel-1.jpg" alt="">
+                            </div>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img style="border-radius: 5px;" src="../images/carousel-2.jpg" alt="">
+                            </div>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img style="border-radius: 5px;" src="../images/carousel-3.jpg" alt="">
+                            </div>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img style="border-radius: 5px;" src="../images/carousel-4.jpg" alt="">
+                            </div>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img style="border-radius: 5px;" src="../images/carousel-5.jpg" alt="">
+                            </div>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img style="border-radius: 5px;" src="../images/carousel-6.jpg" alt="">
+                            </div>
+                        </figure>
+                    </li>
+                </ul>
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img style="border-radius: 5px;" src="../images/carousel-1.jpg"
+                                alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img style="border-radius: 5px;" src="../images/carousel-2.jpg"
+                                alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img style="border-radius: 5px;" src="../images/carousel-3.jpg"
+                                alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img style="border-radius: 5px;" src="../images/carousel-4.jpg"
+                                alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img style="border-radius: 5px;" src="../images/carousel-5.jpg"
+                                alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img style="border-radius: 5px;" src="../images/carousel-6.jpg"
+                                alt=""></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Products -->
+    <div class="container">
+        <h1 class="text-center">Our Products</h1>
+        <div class="row pb-3">
+            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card1">
+                    <img src="../images/card-1.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tasty Noodles</h5>
+                        <p class="card-text">Noodles are a type of food made from unleavened dough which is either
+                            rolled flat and cut, stretched, or extruded, into long strips or strings.</p>
+                        <a href="#" class="cardsBtn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card2">
+                    <img src="../images/card-2.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger with Soos</h5>
+                        <p class="card-text">A hamburger, also called a burger, is a dish consisting of fillings—usually
+                            a patty of ground meat, typically beef—placed inside a sliced bun or bread roll.</p>
+                        <a href="#" class="cardsBtn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card3">
+                    <img src="../images/card-3.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Glass Noodles</h5>
+                        <p class="card-text">Cellophane noodles, or fensi, sometimes called glass noodles, are a type of
+                            transparent noodle made from starch and water. A stabilizer such as chitosan may also be
+                            used.</p>
+                        <a href="#" class="cardsBtn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card4">
+                    <img src="../images/card-4.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger with Cream</h5>
+                        <p class="card-text">This burger combines juicy beef patties with a rich, flavorful cream sauce
+                            that adds a delicious twist to your regular burger. twist to your regular burger.</p>
+                        <a href="#" class="cardsBtn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-3">
+            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card5">
+                    <img src="../images/card-5.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Finger Chips</h5>
+                        <p class="card-text">A potato chip or crisp is a thin slice of potato that has been deep fried,
+                            baked, or air fried until crunchy. They are commonly served as a snack, side dish, or
+                            appetizer.</p>
+                        <a href="#" class="cardsBtn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card6">
+                    <img src="../images/card-6.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ketchup Burger</h5>
+                        <p class="card-text">Ketchup Premium Burger Bar was found by people, just like you, who LOVE
+                            burgers. When we opened our doors, we had one goal in mind: Fair prices, fresh.</p>
+                        <a href="#" class="cardsBtn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card7">
+                    <img src="../images/card-7.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Circle Chips</h5>
+                        <p class="card-text">we recommend using a maincrop floury potato, like a Maris Piper, which will
+                            give you a fluffy inside and crisp outer coating. They will absorb the oil when fried to
+                            give.</p>
+                        <a href="#" class="cardsBtn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card8">
+                    <img src="../images/card-8.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tasty Pizza title</h5>
+                        <p class="card-text">Pizza is a traditional Italian dish typically consisting of a flat base of
+                            leavened wheat-based dough topped with tomato, cheese, and other ingredients.</p>
+                        <a href="#" class="cardsBtn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+        <div class="footerBg">
+            <div class="footercnt d-flex justify-content-around ">
+                <div class="logofooter">
+                    <img src="../images/logo-footer.png" alt="logo..." width="40px"><span
+                        id="footerLogo">Groce</span></a>
+                </div>
+                <div class="author">
+                    <h2 class="authorHeading">HANIFA ASAD</h2>
+                </div>
+                <div class="socialMediaIcons">
+                    <a href="https://github.com/Hanifa-Asad"><svg class="socialMedia"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                        </svg></a>
+                    <a href="https://www.linkedin.com/in/hanifa-asad-3715212aa/"><svg class="socialMedia"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                            <path d="M8 11l0 5" />
+                            <path d="M8 8l0 .01" />
+                            <path d="M12 16l0 -5" />
+                            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                        </svg></a>
+                    <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="cursor: pointer;"
+                        id="whatsapp"><svg class="socialMedia" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                            <path
+                                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Js -->
+    <script src="../javascript/store.js"></script>
+</body>
+
+</html>

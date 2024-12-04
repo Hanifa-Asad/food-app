@@ -1,0 +1,140 @@
+ @media only screen and (max-width: 992px) {
+     .navUl li a {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .headerBtn {
+         justify-content: center;
+         align-items: center;
+     }
+
+     .slideImgCol,
+     .slideTextCol,
+     .exImgCol,
+     .exTextCol,
+     .contactImgCol {
+         justify-content: center;
+     }
+
+     .exImg {
+         margin-bottom: 20px;
+     }
+
+     .category1,
+     .category2,
+     .blogPost1,
+     .blogPost2,
+     .blogPost5,
+     .blogPost6 {
+         margin-bottom: 20px;
+     }
+
+     .hireBx3,
+     .hireBx4 {
+         margin-bottom: 20px;
+     }
+
+     .installAppDiv {
+         margin-bottom: 20px;
+     }
+
+     .footercnt {
+         flex-direction: column;
+         align-items: center;
+         gap: 10px;
+         justify-content: center !important;
+     }
+ }
+
+ @media only screen and (max-width: 1200px) {
+     .navUl li a {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+
+     }
+
+     .headerBtn {
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+
+     .signupBtn {
+         margin-bottom: 10px;
+     }
+     .storeBtn{
+        margin: 10px 0px;
+     }
+ }
+
+ @media only screen and (max-width: 768px) {
+
+     .category3,
+     .category4,
+     .blogPost3,
+     .blogPost4,
+     .blogPost7,
+     .blogPost8 {
+         margin-bottom: 20px;
+     }
+
+     .hireBxRow {
+         margin-left: 0px !important;
+         margin-right: 0px !important;
+     }
+ }
+
+ @media only screen and (max-width: 540px) {
+
+     .slideReview,
+     .slideBtn {
+         flex-direction: column-reverse;
+     }
+
+     .slideBtn {
+         margin-bottom: 20px !important;
+     }
+
+     .social-container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         gap: 10px;
+     }
+
+     .social-container {
+         margin: 0px !important;
+     }
+
+     #fileSelectBtn {
+         margin-bottom: 10px;
+     }
+
+     #cancelUploadBtn {
+         margin-top: 0px !important;
+     }
+ }
+
+ @media only screen and (max-width: 400px) {
+
+     #userPhotoUpload {
+         width: 100px !important;
+         height: 100px !important;
+     }
+
+     .mainProfileBg {
+         margin-left: 120px !important;
+     }
+ }
+
+ @media only screen and (max-width: 320px) {
+     #userName {
+         font-size: 15px !important;
+     }
+ }
